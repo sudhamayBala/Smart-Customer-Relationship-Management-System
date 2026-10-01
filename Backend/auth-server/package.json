@@ -1,0 +1,39 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "Authentication backend for the CRM app",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "bootstrap:super-admin": "tsx src/scripts/bootstrapSuperAdmin.ts",
+    "start": "node dist/server.js"
+  },
+  "keywords": [
+    "auth",
+    "express",
+    "crm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "jose": "^6.2.12",
+    "mysql2": "^3.24.5",
+    "sequelize": "^6.37.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

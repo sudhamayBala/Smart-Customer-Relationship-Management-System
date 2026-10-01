@@ -1,0 +1,110 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+}
+
+.app-sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #0b1324;
+  color: #ffffff;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 8px 10px 30px;
+}
+
+.app-brand-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b1324;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.app-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navigation-link {
+  color: #aeb8ca;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.navigation-link:hover {
+  background: #172238;
+  color: #ffffff;
+}
+
+.navigation-link.active {
+  background: #ffffff;
+  color: #0b1324;
+  font-weight: 600;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-header {
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  box-sizing: border-box;
+}
+
+.app-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.app-user-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.app-user-info strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.app-user-info span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.app-content {
+  padding: 28px;
+}

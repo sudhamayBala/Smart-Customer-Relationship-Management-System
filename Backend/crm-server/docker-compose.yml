@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: crm
+      MYSQL_ROOT_PASSWORD: crm_dev_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - crm_mysql_data:/var/lib/mysql
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  crm_mysql_data:

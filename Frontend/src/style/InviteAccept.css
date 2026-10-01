@@ -1,0 +1,133 @@
+.invite-accept-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: #f0f2f5;
+}
+
+.invite-accept-panel {
+  width: min(440px, 100%);
+  padding: 26px 30px 30px;
+  border: 1px solid #dfe3e9;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 27, 48, 0.08);
+}
+
+.invite-accept-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #17233a;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.invite-accept-brand span {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #e04a0a;
+}
+
+.invite-accept-eyebrow {
+  margin: 26px 0 7px;
+  color: #67748a;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.invite-accept-panel h1 {
+  margin: 0;
+  color: #16243b;
+  font-size: 23px;
+}
+
+.invite-accept-copy,
+.invite-accept-result p {
+  margin: 9px 0 20px;
+  color: #657187;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.invite-accept-panel form {
+  display: grid;
+  gap: 8px;
+}
+
+.invite-accept-panel label {
+  margin-top: 6px;
+  color: #34425a;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.invite-accept-panel input {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #d3d9e2;
+  border-radius: 5px;
+  color: #17233a;
+  font: inherit;
+  font-size: 12px;
+}
+
+.invite-accept-panel input:focus {
+  border-color: #315fae;
+  outline: 2px solid rgba(49, 95, 174, 0.15);
+}
+
+.invite-accept-submit {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #d84308;
+  color: #fff;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.invite-accept-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.invite-accept-error {
+  margin: 4px 0 0;
+  color: #b13d2c;
+  font-size: 11px;
+}
+
+.invite-accept-result {
+  padding-top: 38px;
+}
+
+.invite-accept-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e3f3e9;
+  color: #22613c;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .invite-accept-panel {
+    padding: 22px;
+  }
+}

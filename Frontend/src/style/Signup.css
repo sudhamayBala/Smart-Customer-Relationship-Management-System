@@ -1,0 +1,37 @@
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-paper {
+  width: 100%;
+  max-width: 450px;
+  padding: 32px;
+}
+
+.signup-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.signup-subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.signup-button {
+  margin-top: 24px !important;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 24px !important;
+}
+
+.login-link {
+  text-decoration: none;
+  font-weight: 600;
+}

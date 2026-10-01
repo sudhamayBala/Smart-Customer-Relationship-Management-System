@@ -1,0 +1,79 @@
+.forbidden-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: #f0f2f5;
+}
+
+.forbidden-card {
+  width: min(560px, 100%);
+  padding: 34px 38px;
+  border: 1px solid #dfe3e9;
+  border-top: 3px solid #d2673e;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(15, 27, 48, 0.07);
+  text-align: left;
+}
+
+.forbidden-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #a65331;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.forbidden-code {
+  display: block;
+  margin-bottom: 8px;
+  color: #c45e38;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.forbidden-card h1 {
+  margin: 0;
+  color: #17233a;
+  font-size: 22px;
+}
+
+.forbidden-card p {
+  margin: 10px 0 22px;
+  max-width: 440px;
+  color: #657187;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.forbidden-card button {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 14px;
+  background: #2458d3;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forbidden-card button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .forbidden-card {
+    padding: 28px 24px;
+  }
+
+  .forbidden-code {
+    font-size: 48px;
+  }
+
+  .forbidden-card h1 {
+    font-size: 20px;
+  }
+}

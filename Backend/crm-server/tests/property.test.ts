@@ -1,0 +1,45 @@
+import request from "supertest";
+import app from "../src/app";
+
+describe("Property API", () => {
+  it("should reject requests without authentication", async () => {
+    const response = await request(app)
+      .get("/api/properties");
+
+    expect(response.status).toBe(401);
+  });
+
+  it("should reject property creation without authentication", async () => {
+    const response = await request(app)
+      .post("/api/properties")
+      .send({
+        title: "Test Property",
+        listingType: "SALE",
+        bhk: 2,
+        area: 1000,
+        price: 5000000,
+        buildingName: "Test Building",
+        unitNo: "101"
+      });
+
+    expect(response.status).toBe(401);
+  });
+
+  it("should reject property update without authentication", async () => {
+    const response = await request(app)
+      .put("/api/properties/test-id")
+      .send({
+        title: "Updated Property",
+        version: 1
+      });
+
+    expect(response.status).toBe(401);
+  });
+
+  it("should reject property deletion without authentication", async () => {
+    const response = await request(app)
+      .delete("/api/properties/test-id");
+
+    expect(response.status).toBe(401);
+  });
+});
